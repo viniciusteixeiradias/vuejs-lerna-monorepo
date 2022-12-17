@@ -2,17 +2,13 @@
   "name": "root",
   "private": true,
   "scripts": {
-    "postinstall": "lerna bootstrap",
     "admin": "cd ./packages/admin && pnpm dev",
-    "admin:build": "cd ./packages/admin && pnpm build",
-    "test": "lerna exec -- pnpm test",
-    "lint": "lerna exec -- pnpm lint"
+    "admin:build": "cd ./packages/admin && pnpm build"
   },
   "workspaces": [
     "packages/*"
   ],
   "devDependencies": {
-    "@types/node": "^18.11.16",
-    "lerna": "^6.1.0"
+    "@types/node": "^18.11.16"
   }
 }

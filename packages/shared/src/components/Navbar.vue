@@ -1,4 +1,12 @@
+<script lang="ts" setup>
+import { ref } from 'vue';
+
+const count = ref(0);
+</script>
+
 <template>
+  <h1>Count: {{count}}</h1>
+  <button @click="count++">increment</button>
   <ul class="navbar">
     <li>
         <router-link :to="{ name: 'Home' }">Home</router-link>
